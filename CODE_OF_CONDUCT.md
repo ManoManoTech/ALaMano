@@ -37,7 +37,7 @@ contributor for other behaviors that they deem inappropriate, threatening, offen
 
 ## Scope
 
-This Code of Conduct applies to all content on manomano, ManoMano’s GitHub organization, or any other official ManoMano
+This Code of Conduct applies to all content on ManoMano, ManoMano’s GitHub organization, or any other official ManoMano
 web presence allowing for community interactions, as well as at all official ManoMano events, whether offline or online.
 
 The Code of Conduct also applies within project spaces and in public spaces whenever an individual is representing
@@ -83,7 +83,7 @@ complaints about conduct that has occurred within one year of the report.
 If the Project Stewards receive a report alleging a violation of the Code of Conduct, the Project Stewards will notify
 the accused of the report, and provide them an opportunity to discuss the report before a sanction is issued. The
 Project Stewards will do their utmost to keep the reporter anonymous. If the act is ongoing (such as someone engaging in
-harassment , or involves a threat to anyone's safety (e.g. threats of violence), the Project Stewards may issue
+harassment, or involves a threat to anyone's safety (e.g. threats of violence), the Project Stewards may issue
 sanctions without notice.
 
 ## Attribution

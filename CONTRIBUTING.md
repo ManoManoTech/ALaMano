@@ -29,11 +29,11 @@ ManoMano staff should also be aware of [additional guidelines](#additional-guide
 
 ## Coding style
 
-We love punch cards, so the maximum line width is 120 characters.
+We love punch cards, so we recommend to use 80 width everytime it is suitable, and don't go over 120 characters.
 
 For regular text (i.e. not code), the fmt(1) utility can be used:
 
-`fmt -w 120 /path/to/file`
+`fmt -w 80 /path/to/file`
 
 We usually do not want to enforce a particular style because we intend to host a lot of different projects by a lot of
 people with different backgrounds. That said, we do request style consistency within the same project (this is

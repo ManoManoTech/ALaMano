@@ -1,4 +1,4 @@
-# Contributing to this repository
+# Contributing to ManoMano Organization
 
 Common guidelines for contributing to ManoMano projects
 
@@ -29,30 +29,23 @@ ManoMano staff should also be aware of [additional guidelines](#additional-guide
 
 ## Coding style
 
-We love punch cards, so we recommend to use 80 width everytime it is suitable, and don't go over 120 characters.
-
-For regular text (i.e. not code), the fmt(1) utility can be used:
-
-`fmt -w 80 /path/to/file`
+Follow the project's conventions.
 
 We usually do not want to enforce a particular style because we intend to host a lot of different projects by a lot of
-people with different backgrounds. That said, we do request style consistency within the same project (this is
-especially important for reusable recipes like ansible roles and terraform modules).
+people with different backgrounds. That said, we do request style **consistency within the same project**, this is
+especially important for reusable projects (module or librairies) that will have more scrutiny.
 
-Here's a non exhaustive list of code style helpers that we find useful.
-
-| Language / Tool | Linter / Formatter          |
-|-----------------|-----------------------------|
-| Ansible         | ansible-lint                |
-| Go              | Native Linter (compilation) |
-| JSON            | JsonLint                    |
-| PHP             | PHP-CS-Fixer                |
-| Python          | PEP 8                       |
-| Terraform (HCL) | terraform fmt               |
+Contact the contributors if you new help with tooling.
 
 ## Documentation
 
-Substantial contribution must always come with exhaustive documentation. We consider documentation as important as code.
+We consider documentation as important as code. Substantial contribution must always come with exhaustive documentation. 
+
+## Tests
+
+Application and contributions should be tested and push for the highest quality standard. 
+
+Maintainers could help you writing tests and with the tooling.
 
 ## Git
 

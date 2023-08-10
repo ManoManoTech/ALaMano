@@ -70,7 +70,7 @@ violation, report it.
 
 ## Reporting Violations
 
-Violations of the Code of Conduct can be reported to ManoMano’s Project Stewards, Antoine Jacoutot (antoine.jacoutot@manomano.com) or Fabien Lemarchand (fabien.lemarchand@manomano.com). The Project Steward will determine
+Violations of the Code of Conduct can be reported to ManoMano’s Project Steward Fabien Lemarchand (fabien.lemarchand@manomano.com). The Project Steward will determine
 whether the Code of Conduct was violated, and will issue an appropriate sanction, possibly including a written warning
 or expulsion from the project, project sponsored spaces, or project forums. We ask that you make a good-faith effort to
 resolve your conflict via the conflict resolution policy before submitting a report.

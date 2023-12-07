@@ -1,10 +1,10 @@
-# Contributing to this repository
+# Contributing to ManoMano Organization
 
 Common guidelines for contributing to ManoMano projects
 
 ## Foreword
 
-First off, thank you for taking the time to contribute! 
+First off, thank you for taking the time to contribute!
 
 It's worth mentioning that the purpose of this document is to provide you with a set of general guidelines and not
 strict rules: nothing is set in stone and we welcome contributions about these contributing guidelines as well :-)
@@ -14,7 +14,7 @@ strict rules: nothing is set in stone and we welcome contributions about these c
 We want to make contributing straightforward and easy for everyone. As such and unless otherwise stated, we will use the
 traditional GitHub fork and pull workflow: any commit must be made to a feature/topic branch in a local fork and
 submitted via a pull request before it can be merged. If you are familiar with GitHub (and Git), branching and opening a
-pull request or an issue... then you should be able to start contributing right away. 
+pull request or an issue... then you should be able to start contributing right away.
 
 It is **strongly advised** to contact the project owner(s) **before** working on implementing a new feature or making
 any kind of large code refactoring.
@@ -29,30 +29,23 @@ ManoMano staff should also be aware of [additional guidelines](#additional-guide
 
 ## Coding style
 
-We love punch cards, so we recommend to use 80 width everytime it is suitable, and don't go over 120 characters.
-
-For regular text (i.e. not code), the fmt(1) utility can be used:
-
-`fmt -w 80 /path/to/file`
+Follow the project's conventions.
 
 We usually do not want to enforce a particular style because we intend to host a lot of different projects by a lot of
-people with different backgrounds. That said, we do request style consistency within the same project (this is
-especially important for reusable recipes like ansible roles and terraform modules).
+people with different backgrounds. That said, we do request style **consistency within the same project**, this is
+especially important for reusable projects (module or librairies) that will have more scrutiny.
 
-Here's a non exhaustive list of code style helpers that we find useful.
-
-| Language / Tool | Linter / Formatter          |
-|-----------------|-----------------------------|
-| Ansible         | ansible-lint                |
-| Go              | Native Linter (compilation) |
-| JSON            | JsonLint                    |
-| PHP             | PHP-CS-Fixer                |
-| Python          | PEP 8                       |
-| Terraform (HCL) | terraform fmt               |
+Contact the contributors if you need help with tooling.
 
 ## Documentation
 
-Substantial contribution must always come with exhaustive documentation. We consider documentation as important as code.
+We consider documentation as important as code. Substantial contribution must always come with exhaustive documentation.
+
+## Tests
+
+Application and contributions should be tested and push for the highest quality standard.
+
+Maintainers could help you writing tests and with the tooling.
 
 ## Git
 
@@ -80,7 +73,7 @@ In a nutshell:
     ```
 
 3. Commit the changes in logical and incremental chunks and use [interactive
-rebase](https://help.github.com/articles/about-git-rebase) when needed. 
+rebase](https://help.github.com/articles/about-git-rebase) when needed.
 
     In your [commit message](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html), make sure to:
 
@@ -176,30 +169,22 @@ exceptions.
 Note that status checks (Travis etc.) are not a requirement.
 
 1. Go to the top level URL of the [ManoManoTech organization](https://github.com/ManoManoTech)
+2. Create a repo with:
+    - [ ] meaningful [Repository name](#naming-conventions) ;
+    - [ ] a description ;
+    - [ ] a README file ;
+3. Once repo is created:
+    - [ ] **Add topics** and add a few descriptive tags ;
+    - [ ] Add the default [LICENSE](LICENSE) and [CONTRIBUTING.md](CONTRIBUTING.md) files to the repository
 
-2. Click on [**New**] then:
+#### Update Repositoty Settings
 
-    - Make sure the **Owner** is set to ManoManoTech
-    - Give it a meaningful [Repository name](#naming-conventions) and
-    **Description**
-    - Check the **Initialize** this repository with a README box and click on [**Create repository**]
+- [ ] Disable the wiki ;
 
-3. Click on **Add topics** and add a few descriptive tags then click on [**Done**].
-
-4. Go to **Settings** and uncheck the **Wikis** box
-
-5. Go to the **Collaborators & teams** tab then:
-
-    - Add **core** to the **Teams** list and give it **Admin** access
-    - Add the project submitter username to the **Collaborators** list and give him/her **Admin** access (even if the
-    submitter is already a member/owner of the ManoManoTech organization or the core team because (s)he may leave the
-    orga at some point)
-
-6. Go to the **Branches** tab and select **main** under the **Protected branches** section
-
-7. Check **Protect this branch** then [**Save changes**]
-
-8. Add the default [LICENSE](LICENSE) and [CONTRIBUTING.md](CONTRIBUTING.md) files to the repository
+- [ ] Add `core` to the **Teams** list and give it `Admin` role ;
+- [ ] Add the project's submitter username to the **Collaborators** list and give him/her `Admin` role ;
+  > even if the submitter is already a member/owner of the ManoManoTech organization or the core team because (s)he may leave the orga at some point
+- [ ] **Protect** the `main` branches*.*
 
 ##### Naming conventions
 
@@ -207,22 +192,18 @@ There are multiple types of repositories.
 
 | Type                           | Convention            | Example                 |
 |--------------------------------|-----------------------|-------------------------|
-| wrapped up solution (use case) | demo-vendor-tech-name | demo-aws-lambda-foobar  |
-| generic reusable recipes       | tech-type             | ansible-roles           |
-| software                       | software name         | superduperutility       |
-| organizational repo            | self-explanatory      | contributing-guidelines |
-| forked repositories            | none                  | terraform               |
+| wrapped up solution (use case) | `demo-vendor-tech-`name | demo-aws-lambda-foobar  |
+| generic reusable recipes       | `tech-type`             | ansible-roles           |
+| software                       | `software name`         | superduperutility       |
+| organizational repo            | `self-explanatory`      | contributing-guidelines |
+| forked repositories            | `none`                  | terraform               |
 
 #### Forking an upstream repository
 
-1. [Fork](Fork) the repository
-
-2. Uncheck the **Wikis** box
-
-3. Go to the **Collaborators & teams** tab then:
-
-    - Add **core** to the **Teams** list and give it **Admin** access
-    - Make sure the **Collaborators** list is empty
+- [ ] Fork the repository
+- [ ] Disable the wiki ;
+- [ ] Add `core` to the **Teams** list and give it `Admin` role ;
+- [ ] Make sure the ***Collaborators* list is empty**
 
 Regularly keep the forked repository up-to-date with its upstream: see Syncing a fork with its upstream for details.
 
